@@ -1,8 +1,11 @@
-# ChariTech
-Simprint's challenges for the ChariTech heckathon held in Cambridge on 17th March 2017.
+# ChariTech - implementation by group at Table 11
 
-## Impact data portal
-Once in the hands of a frontline worker, Simprints enables real time identification of beneficiaries. However, to truly maximise our impact we need to put actionable data into the hands of frontline workers, managers, and policy makers to drive fundamental improvements in the delivery of healthcare, education, and aid distribution. Can you build an easily extensible data portal that plugs into a Firebase real time database?
+We have implemented a convolutional neural network
 
-## Fingerprint classification
-How can you efficiently find a matching fingerprint in a database of over a million people? A method that has been around since the 19th century is to pre-sort the fingerprints by their basic pattern type. Given a training set of fingerprint images, can you build a robust algorithm to classify a fingerprint as a left loop, whorl, right loop, tented arch or arch. How will it fare against our test set?  
+## Installation
+
+You need to have Python 3 installed
+
+## Running our code
+
+Run ``main.py``. This file trains the neural network with the traning data and tests the data with the test set. The output is printed onto terminal and onto a file ``test.output``
