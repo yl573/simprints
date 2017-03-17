@@ -4,3 +4,4 @@ testSet
 .DS_Store
 data_portal/
 fingerprintClassification/
+data.pickle
