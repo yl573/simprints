@@ -14,7 +14,7 @@ from keras.layers import Conv2D, MaxPooling2D
 
 # config params
 batch_size = 50
-epochs = 20
+epochs = 30
 
 train = pickle.load(open('./data.pickle', 'rb'))
 X_train = train['X_train']
@@ -25,6 +25,7 @@ y_test = train['y_test']
 model = Sequential()
 model.add(Conv2D(4, (3, 3), activation='relu', input_shape=(100, 100, 1)))
 model.add(MaxPooling2D(pool_size=(2, 2)))
+model.add(Dropout(0.25))
 model.add(Conv2D(8, (3, 3), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2, 2)))
 model.add(Dropout(0.25))
@@ -38,6 +39,7 @@ model.add(Dropout(0.4))
 
 
 model.add(Flatten())
+model.add(Dense(32, activation='softmax'))
 model.add(Dense(5, activation='softmax'))
 
 model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
@@ -70,5 +72,5 @@ for i in range(len(results)):
         print("   Probability that it is "+ types[j] + " : " + str(results[i][j]))
         file.write("   Probability that it is "+ types[j] + " : " + str(results[i][j]))
 
-        
+file.close()
         
