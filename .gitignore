@@ -2,6 +2,7 @@ trainingSet
 testSet
 .ipynb_checkpoints/
 .DS_Store
+data.pickle
 data_portal/
 fingerprintClassification/
 data.pickle
