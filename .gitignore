@@ -2,3 +2,4 @@ trainingSet
 testSet
 .ipynb_checkpoints/
 .DS_Store
+data.pickle
