@@ -4,7 +4,7 @@ We have implemented a convolutional neural network
 
 ## Installation
 
-You need to have Python 3 installed
+You need to have Python 3 installed. You also need the library and the training and test data sets.
 
 ## Running our code
 
